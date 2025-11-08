@@ -25,6 +25,6 @@ body.custom {
     text-align: center;
 }
 
-theme-switcher, .color-picker {
+.theme-switcher, .color-picker {
     margin-bottom: 15px;
 }
