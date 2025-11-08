@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyTheme(theme) {
         document.body.className = theme;
         if (theme === 'custom') {
-            document.body.style.setProperty('--custom-bg', customColorInput.value);
-            document.body.style.setProperty('--custom-fg', customColorInput.value === '#ffffff' ? '#000000' : '#ffffff');
+            const customColor = customColorInput.value || '#ffffff';
+            document.body.style.setProperty('--custom-bg', customColor);
+            document.body.style.setProperty('--custom-fg', customColor === '#ffffff' ? '#000000' : '#ffffff');
         }
         localStorage.setItem('theme', theme);
     }
