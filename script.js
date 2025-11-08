@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener for applying custom color
     applyThemeButton.addEventListener('click', () => {
-        const isValidColor = /^#[0-9A-F]{6}$/i.test(customColorInput.value.trim());
+        const isValidColor = /^(#[0-9A-F]{6}|#[0-9A-F]{3})$/i.test(customColorInput.value.trim());
         if (isValidColor) {
             applyTheme('custom');
         } else {
