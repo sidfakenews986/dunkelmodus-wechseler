@@ -4,9 +4,17 @@ body.light {
     color: black;
 }
 
+body.light:hover {
+    background-color: lightgray;
+}
+
 body.dark {
     background-color: black;
     color: white;
+}
+
+body.dark:hover {
+    background-color: darkgray;
 }
 
 body.custom {
