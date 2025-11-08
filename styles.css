@@ -19,12 +19,12 @@ body.custom {
 }
 
 .container {
-    max-width: 100%;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
     text-align: center;
 }
 
-.theme-switcher, .color-picker {
+theme-switcher, .color-picker {
     margin-bottom: 15px;
 }
