@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+body.custom {
+    background-color: var(--custom-bg, white);
+    color: var(--custom-fg, black);
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.theme-switcher, .color-input {
+    margin-bottom: 15px;
+}
