@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener for applying custom color
     applyThemeButton.addEventListener('click', () => {
-        applyTheme('custom');
+        const isValidColor = /^#[0-9A-F]{6}$/i.test(customColorInput.value.trim());
+        if (isValidColor) {
+            applyTheme('custom');
+        } else {
+            alert('Please enter a valid hex color code.');
+        }
     });
 });
