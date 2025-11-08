@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const customColorInput = document.getElementById('customColor');
     const applyThemeButton = document.getElementById('applyTheme');
 
-    // Funktion zum Anwenden des Themas
+    // Function to apply the theme
     function applyTheme(theme) {
         document.body.className = theme;
         if (theme === 'custom') {
@@ -13,17 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', theme);
     }
 
-    // Erstes Setzen des Themas
+    // Initial theme setting
     const savedTheme = localStorage.getItem('theme') || 'light';
     themeSelector.value = savedTheme;
     applyTheme(savedTheme);
 
-    // Ereignis-Listener für das Thema wechseln
+    // Event listener for theme change
     themeSelector.addEventListener('change', () => {
         applyTheme(themeSelector.value);
     });
 
-    // Ereignis-Listener für benutzerdefinierte Farbe anwenden
+    // Event listener for applying custom color
     applyThemeButton.addEventListener('click', () => {
         applyTheme('custom');
     });
