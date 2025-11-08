@@ -27,4 +27,9 @@ body.custom {
 
 .theme-switcher, .color-picker {
     margin-bottom: 15px;
+    transition: background-color 0.2s;
+}
+
+.theme-switcher:hover, .color-picker:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
