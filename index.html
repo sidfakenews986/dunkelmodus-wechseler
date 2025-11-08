@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunkelmodus-Wechsler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dunkelmodus-Wechsler</h1>
+        <div class="theme-switcher">
+            <label for="theme">Wählen Sie ein Farbschema:</label>
+            <select id="theme">
+                <option value="light">Lichtmodus</option>
+                <option value="dark">Dunkelmodus</option>
+                <option value="custom">Benutzerdefiniert</option>
+            </select>
+        </div>
+        <div class="color-input">
+            <label for="customColor">Benutzerdefinierte Farbe:</label>
+            <input type="color" id="customColor">
+        </div>
+        <button id="applyTheme">Anwenden</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
