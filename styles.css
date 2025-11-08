@@ -1,9 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s, color 0.3s;
-    padding: 10px;
-}
-
+/* Theme classes for body element */
 body.light {
     background-color: white;
     color: black;
@@ -17,20 +12,4 @@ body.dark {
 body.custom {
     background-color: var(--custom-bg, white);
     color: var(--custom-fg, black);
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.theme-switcher, .color-picker {
-    margin-bottom: 15px;
-    transition: background-color 0.2s;
-}
-
-.theme-switcher:hover, .color-picker:hover {
-    background-color: rgba(0, 0, 0, 0.1);
 }
