@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
+    padding: 10px;
 }
 
 body.light {
@@ -25,11 +26,11 @@ body.custom {
     text-align: center;
 }
 
-.theme-switcher, .color-picker {
+theme-switcher, .color-picker {
     margin-bottom: 15px;
     transition: background-color 0.2s;
 }
 
-.theme-switcher:hover, .color-picker:hover {
+theme-switcher:hover, .color-picker:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
