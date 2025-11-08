@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyTheme(theme) {
         document.body.className = theme;
         if (theme === 'custom') {
-            const customColor = customColorInput.value || '#ffffff';
+            const customColor = customColorInput.value.trim() || '#ffffff';
             document.body.style.setProperty('--custom-bg', customColor);
             document.body.style.setProperty('--custom-fg', customColor === '#ffffff' ? '#000000' : '#ffffff');
         }
